@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 첫 웹페이지</title>
+    <style>
+        /* CSS: 웹페이지를 예쁘게 꾸미는 부분입니다 */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+        .profile-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 350px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* 이미지를 동그랗게 만듭니다 */
+            object-fit: cover;
+        }
+        h1 { color: #333; }
+        p { color: #666; line-height: 1.6; }
+        .hobby-list {
+            text-align: left;
+            display: inline-block;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/150" alt="프로필 사진">
+
+        <h1>안녕! 나는 [이름]이야</h1>
+
+        <p>코딩을 처음 배우기 시작한 학생이야.<br>
+           HTML로 나만의 페이지를 만드니까 정말 신기해!</p>
+
+        <hr> <h3>나의 취미</h3>
+        <ul class="hobby-list">
+            <li>🎮 게임하기</li>
+            <li>📚 책 읽기</li>
+            <li>🎧 음악 듣기</li>
+        </ul>
+
+        <br>
+
+        <p>나에 대해 더 알고 싶다면?</p>
+        <a href="https://www.google.com" target="_blank">내 블로그 구경가기</a>
+    </div>
+
+</body>
+</html>
